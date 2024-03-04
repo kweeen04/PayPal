@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <dependency>
+        <groupId>com.paypal.sdk</groupId>
+        <artifactId>rest-api-sdk</artifactId>
+        <version>1.14.0</version>
+    </dependency>
+    <servlet>
+        <servlet-name>AuthorizePaymentServlet</servlet-name>
+        <servlet-class>AuthorizePaymentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReviewPaymentServlet</servlet-name>
+        <servlet-class>ReviewPaymentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExecutePaymentServlet</servlet-name>
+        <servlet-class>ExecutePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthorizePaymentServlet</servlet-name>
+        <url-pattern>/authorize_payment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReviewPaymentServlet</servlet-name>
+        <url-pattern>/review_payment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExecutePaymentServlet</servlet-name>
+        <url-pattern>/execute_payment</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>checkout.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
