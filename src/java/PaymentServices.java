@@ -14,8 +14,8 @@ import com.paypal.base.rest.*;
 
 public class PaymentServices {
 
-    private static final String CLIENT_ID = "AYTONHT6i8VzZ7h55AqDAjqLpCTMuI_c0q2qaSoT88jpdzt4p4SPymb2A54PGXvUaxKJ6JSol1k93aZy";
-    private static final String CLIENT_SECRET = "EMOA5kitCtHSRR7hq2IT8WpuCbHBmCRt2MzcoWvFTcjXfBOjrTFuXqYNwh2jdRlF4jS7B4-FRntKyzX-";
+    private static final String CLIENT_ID ="";
+    private static final String CLIENT_SECRET = "";
     private static final String MODE = "sandbox";
 
     public String authorizePayment(OrderDetail orderDetail)
